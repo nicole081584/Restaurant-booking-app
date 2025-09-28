@@ -6,6 +6,7 @@ A full-stack Android restaurant booking application where users can make reserva
 ---
 
 ## 🚨 Note: This app is written for Android only. It is not optimized for iOS.
+
 ---
 
 ## ✨ Features
@@ -24,6 +25,7 @@ A full-stack Android restaurant booking application where users can make reserva
 
 
 ---
+
 ## 🏗️ Tech Stack
 
 ### Frontend
@@ -46,6 +48,7 @@ PDFKit / ReportLab (for voucher PDF generation)
 Jest + Supertest for testing
 
 ---
+
 ## 📂 Project Structure
 
 ```bash
@@ -64,7 +67,9 @@ booking-app/
 │
 └── README.md         # (this file)
 ```
+
 ---
+
 ## 🚀 Getting Started
 ### Prerequisites
 
@@ -75,7 +80,9 @@ npm or yarn
 Expo CLI (npm install -g expo-cli)
 
 Android device with Expo Go or Android emulator
+
  ---
+ 
 ## 🔧 Backend Setup (Express.js)
 
 ### Go to the backend folder:
@@ -106,8 +113,8 @@ EMAIL_PASS=your-email-password-or-app-password
 npm run dev
 ```
 
-
 The API will be available at: http://localhost:3001
+
 
 ## 📱 Frontend Setup (Expo Android App)
 
@@ -139,6 +146,7 @@ On Android device: Open the Expo Go app, scan the QR code, and launch the app.
 On Android emulator: Press a in the terminal to start in the emulator.
 
  ---
+ 
 ## 🧪 Running Tests
 ### Backend tests:
 
@@ -155,6 +163,7 @@ npm test
 ```
 
 ---
+
 ## 📌 Roadmap
 
  Add user accounts & login system
@@ -168,17 +177,20 @@ npm test
  (Future) iOS compatibility
 
 ---
+
 ## 🤝 Contributing
 
 Pull requests are welcome!
 For major changes, please open an issue first to discuss what you’d like to change.
 
 ---
+
 ## 👩‍🔧 Author
 
 Built by Nicole Niebel — independent developer passionate about robust, testable mobile apps and resilient backend APIs.
 
 ---
+
 ## 📜 License
 
 MIT License © 2025 Nicole Niebel
