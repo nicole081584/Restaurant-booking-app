@@ -21,8 +21,11 @@ A full-stack Android restaurant booking application where users can make reserva
 🔄 Reset Flow – Users can return and make another booking
 
 🧪 Full Test Coverage – Jest tests for backend logic and frontend components
+
+
 ---
 ## 🏗️ Tech Stack
+
 ### Frontend
 
 Expo (React Native)
