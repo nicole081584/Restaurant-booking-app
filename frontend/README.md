@@ -1,50 +1,124 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+---
+# Booking App Frontend
 
-## Get started
+This is the frontend of the Booking App, built with React Native (Expo) for Android only.
+It provides a booking form, booking confirmation screen, and integration with a backend API to save bookings.
 
-1. Install dependencies
+---
+## 🚀 Features
 
-   ```bash
-   npm install
-   ```
+Booking form with validation
 
-2. Start the app
+Booking confirmation screen with details
 
-   ```bash
-   npx expo start
-   ```
+Custom UI components (ThemedText, ThemedView, ButtonAndInputStyles, etc.)
 
-In the output, you'll find options to open the app in a
+API integration via backendService.ts
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Jest tests with @testing-library/react-native
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Written entirely in TypeScript
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## 📂 Project Structure
 
 ```bash
-npm run reset-project
+frontend/
+├── __mocks__/               # Jest mocks
+├── __test__/                # Unit tests
+├── app/                     # App entry points
+│   ├── _layout.tsx
+│   └── index.tsx
+├── assets/                  # Images & static assets
+├── components/              # Reusable UI & booking components
+│   ├── BookingForm.tsx
+│   ├── BookingConfirmation.tsx
+│   ├── bookingCalender.tsx
+│   ├── backendService.ts    # API calls to backend
+│   ├── validateBookingForm.ts
+│   └── ...
+├── constants/               # Shared constants
+├── hooks/                   # React hooks
+├── scripts/                 # Utility scripts
+├── jest.config.js           # Jest configuration
+├── jest.setup.js            # Jest setup for React Native
+├── app.json                 # Expo configuration
+├── tsconfig.json            # TypeScript config
+└── package.json             # Project dependencies
+
+```
+Some folders like .expo/ and node_modules/ are omitted from this overview for clarity.
+---
+
+## ⚙️ Setup & Installation
+1. Prerequisites
+
+Node.js
+ (LTS recommended)
+
+Expo CLI
+
+Android Emulator or a physical Android device
+
+2. Install dependencies
+
+```bash
+cd frontend
+npm install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+3. Run the app (Android only)
 
-## Learn more
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+This will start the Expo development server.
 
-## Join the community
+Press a to open in Android emulator
 
-Join our community of developers creating universal apps.
+Or scan the QR code in the Expo Go app (on Android device)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+4. 🧪 Testing
+We use Jest with @testing-library/react-native.
+
+Run all tests:
+
+```bash
+npm test
+```
+
+Run specific test:
+Tests are located in the __test__/ folder.
+
+Example:
+
+```bash
+npm test __test__/index.test.tsx
+```
+
+---
+## 🔗 Backend Integration
+
+The frontend communicates with the backend via the API methods in components/backendService.ts.
+Make sure the backend server is running before testing booking submission.
+
+By default, the backend URL can be configured in .env Under APIBASE
+
+---
+## 📌 Notes
+
+This app is only designed for Android.
+
+iOS is not supported.
+
+To run the entire project (frontend + backend), see the main Booking App README
+
+---
+
+## 👩‍🔧 Author
+
+Built by Nicole Niebel — independent developer passionate about robust, testable mobile apps and resilient backend APIs.
