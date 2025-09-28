@@ -102,9 +102,9 @@ npm install
 ### Set up environment variables:
 Create a .env file in /backend with at least:
 
-SERVER_URL= http://localhost:3001
-EMAIL_USER=your-email@example.com
-EMAIL_PASS=your-email-password-or-app-password
+- SERVER_URL= http://localhost:3001
+- EMAIL_USER=your-email@example.com
+- EMAIL_PASS=your-email-password-or-app-password
 
 
 ### Run the backend:
