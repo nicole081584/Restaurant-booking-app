@@ -1,10 +1,13 @@
 
 ---
+
 # Booking App Backend
 
 This is the backend of the Booking App, built with Node.js and Express.js.
 It provides the REST API for handling bookings, storing data, and serving the frontend.
+
 ---
+
 ## 🚀 Features
 
 REST API for booking slot retrival, booking creation and retrieval
@@ -16,6 +19,7 @@ Environment-based configuration with .env
 Jest unit tests
 
 ---
+
 ## 📂 Project Structure
 
 ```bash
@@ -32,7 +36,9 @@ backend/
 ```
 
 ---
+
 ## ⚙️ Setup & Installation
+
 1. Prerequisites
 
 Node.js
@@ -51,17 +57,15 @@ npm install
 
 Create a .env file in the backend root:
 
-SERVER_URL= http://localhost:3001
-EMAIL_USER=your-email@example.com
-EMAIL_PASS=your-email-password-or-app-password
+- SERVER_URL= http://localhost:3001
+- EMAIL_USER=your-email@example.com
+- EMAIL_PASS=your-email-password-or-app-password
 
 4. Run the backend server
 
 ```bash
 npm run dev
 ```
-
-
 The server will start on http://localhost:3001 (or the port set in .env).
 
 5. Run tests
@@ -71,12 +75,14 @@ npm test
 ```
 
 ---
+
 ## 🔗 Frontend Integration
 
 The frontend communicates with the backend through backendService.ts.
 Ensure the backend is running before starting the frontend.
 
 ---
+
 ## 📌 Notes
 
 Keep your .env file private (already ignored in .gitignore).
@@ -84,6 +90,7 @@ Keep your .env file private (already ignored in .gitignore).
 Backend is lightweight and can be extended with more routes/services if needed.
 
 ---
+
 ## 👩‍🔧 Author
 
 Built by Nicole Niebel — independent developer passionate about robust, testable mobile apps and resilient backend APIs.
