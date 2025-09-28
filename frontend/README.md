@@ -1,11 +1,13 @@
 
 ---
+
 # Booking App Frontend
 
 This is the frontend of the Booking App, built with React Native (Expo) for Android only.
 It provides a booking form, booking confirmation screen, and integration with a backend API to save bookings.
 
 ---
+
 ## 🚀 Features
 
 Booking form with validation
@@ -50,6 +52,7 @@ frontend/
 
 ```
 Some folders like .expo/ and node_modules/ are omitted from this overview for clarity.
+
 ---
 
 ## ⚙️ Setup & Installation
@@ -101,6 +104,7 @@ npm test __test__/index.test.tsx
 ```
 
 ---
+
 ## 🔗 Backend Integration
 
 The frontend communicates with the backend via the API methods in components/backendService.ts.
@@ -109,6 +113,7 @@ Make sure the backend server is running before testing booking submission.
 By default, the backend URL can be configured in .env Under APIBASE
 
 ---
+
 ## 📌 Notes
 
 This app is only designed for Android.
